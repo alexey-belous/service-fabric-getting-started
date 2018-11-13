@@ -1,0 +1,7 @@
+{
+  "generator-azuresfcsharp": {
+    "projName": "sampleapp",
+    "frameworkType": "Reliable Stateless Service",
+    "author": "<your name>"
+  }
+}
