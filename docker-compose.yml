@@ -1,0 +1,22 @@
+version: "3"
+services:
+  servicefactory:
+    container_name: servicefactory
+    build: ./ServiceFabric
+    ports: 
+      - "19080:19080"
+      - "19000:19000"
+      - "25100-25200:25100-25200"
+      - "443:443"
+      - "80:80"
+    network_mode: bridge
+    volumes: 
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./cluster_data:/home/ClusterDeployer/ClusterData
+  storage:
+    container_name: storage
+    image: arafato/azurite
+    ports: 
+      - "10000-10002:10000-10002"
+    volumes:
+      - ./storage_data:/opt/azurite/folder
