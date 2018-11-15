@@ -1,5 +1,8 @@
-# Working example (on Mac and Windows is in the `FabricDotNet` folder).
+# Overview
+## Working example (on Mac and Windows is in the [`FabricDotNet`](./FabricDotNet) folder).
+## [`TestImage`](./TestImage) folder contains an example of SF app, represented as docker image.
 
+# Getting started
 ## For Windows
 ### Reuqired software:
 See here: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started
