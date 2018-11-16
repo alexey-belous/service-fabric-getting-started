@@ -12,7 +12,6 @@ services:
     network_mode: bridge
     volumes: 
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./cluster_data:/home/ClusterDeployer/ClusterData
   storage:
     container_name: storage
     image: arafato/azurite
