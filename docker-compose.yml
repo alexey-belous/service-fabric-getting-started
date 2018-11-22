@@ -15,7 +15,7 @@ services:
       # - ./cluster_data:/home/ClusterDeployer/ClusterData
   storage:
     container_name: storage
-    image: arafato/azurite
+    image: alexeybelous/azurite
     ports: 
       - "10000-10002:10000-10002"
     volumes:

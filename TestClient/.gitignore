@@ -1,0 +1,6 @@
+.vs
+**/bin/**
+**/obj/**
+**/pkg/**
+**/Code/**
+packages
